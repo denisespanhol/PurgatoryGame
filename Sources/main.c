@@ -6,10 +6,12 @@
 #include <Windows.h>
 
 #define maxCaracPlayer 11
+#define maxStringToPrint 500
 
 void InsertPlayerName(char playerName[maxCaracPlayer]);
 void AreYouSure(char playerName[maxCaracPlayer], char *yesOrNo);
 void Intro(char playerName[maxCaracPlayer], char *yesOrNo);
+void printingLetterByLetter(char stringToPrint[maxStringToPrint]);
 
 int main() {
     // Seta a localização do projeto para português
@@ -102,5 +104,17 @@ void Intro(char playerName[maxCaracPlayer], char *yesOrNo)
         system("cls");
         printf("Você tá bem? As opções são [s] ou [n]...\nVamos de novo que dessa vez você consegue!");
         Intro(playerName, yesOrNo);
+    }
+}
+
+void printingLetterByLetter(char stringToPrint[maxStringToPrint])
+{
+    int stringLength = strlen(stringToPrint);
+
+
+    for(int index = 0; index <= stringLength; index += 1)
+    {
+        printf("%c", stringToPrint[index]);
+        Sleep(10);
     }
 }
