@@ -2,6 +2,8 @@
 #include <stdlib.h>
 #include <locale.h>
 #include <string.h>
+#include <time.h>
+#include <Windows.h>
 
 #define maxCaracPlayer 11
 
