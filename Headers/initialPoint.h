@@ -1,0 +1,6 @@
+#ifndef FIRSTPOINTINIT_H_INCLUDED
+#define FIRSTPOINTINIT_H_INCLUDED
+
+void firstPointInit(void);
+
+#endif // FIRSTPOINTINIT_H_INCLUDED
